@@ -1,0 +1,2472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bhavani Gift &amp; Fancy Store — Vajarahalli, Kanakapura Main Road, Bengaluru</title>
+<meta name="description" content="Bhavani Gift &amp; Fancy Store, Senappa Building, Kanakapura Main Road, Vajarahalli, Bengaluru. Large superstore for bangles, fashion jewellery, luxury gift hampers, soft toys, wedding return gifts, festive pooja specials &amp; custom gift wrapping.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Medium Dark Warm Luxury Tones */
+  --bronze-dark: #261611;
+  --bronze-base: #381F17;
+  --bronze-mid: #4E2C21;
+  --bronze-soft: #6A3E30;
+  --terracotta: #8D4233;
+  --terracotta-glow: #A85040;
+  
+  /* Light Warm Silk & Cream Tones */
+  --light-pearl: #FAF5EE;
+  --light-cream: #F5EFE6;
+  --light-silk: #FFFDF9;
+  --light-blush: #FBEFE9;
+  --light-amber-card: #FDF4E7;
+  
+  /* Luminous Gold & Amber Accents */
+  --gold-pure: #D4AF37;
+  --gold-glow: #F5C842;
+  --gold-light: #F9DC7A;
+  --gold-deep: #A67C1E;
+  --gold-border: rgba(212, 175, 55, 0.45);
+  --gold-subtle: rgba(212, 175, 55, 0.16);
+  
+  /* Typography & Text */
+  --text-dark: #2A1711;
+  --text-muted-dark: #63473E;
+  --text-light: #FAF5EE;
+  --text-muted-light: #EBD9CE;
+  
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --shadow-gold: 0 14px 40px rgba(212, 175, 55, 0.18);
+  --shadow-deep: 0 20px 50px rgba(38, 22, 17, 0.45);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bronze-base);
+  color: var(--text-light);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; object-fit: cover; }
+button { font-family: inherit; cursor: pointer; border: none; outline: none; background: none; }
+
+/* Progress Bar */
+#scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold-deep), var(--gold-glow), var(--gold-light));
+  z-index: 100;
+  box-shadow: 0 0 10px var(--gold-glow);
+}
+
+/* Base Layout Containers */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Typography Helpers */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.eyebrow-gold { color: var(--gold-glow); }
+.eyebrow-terracotta { color: var(--terracotta-glow); }
+
+.sec-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.sec-title-light { color: var(--text-light); }
+.sec-title-dark { color: var(--text-dark); }
+
+.sec-desc {
+  font-size: 1.08rem;
+  max-width: 680px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.sec-desc-light { color: var(--text-muted-light); }
+.sec-desc-dark { color: var(--text-muted-dark); }
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+  padding: 18px 0;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+nav.scrolled {
+  background: rgba(38, 22, 17, 0.95);
+  backdrop-filter: blur(14px);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gold-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, var(--gold-light), var(--gold-deep));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
+  color: var(--bronze-dark);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.brand-text h1 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--light-silk);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+.brand-text span {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  display: block;
+}
+.nav-links {
+  display: flex;
+  gap: 26px;
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+.nav-links a {
+  color: var(--text-muted-light);
+  transition: color 0.3s;
+  position: relative;
+}
+.nav-links a:hover {
+  color: var(--gold-glow);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-glow), var(--gold-pure) 55%, var(--gold-deep));
+  color: #1a0b07;
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.35);
+  border: 1px solid rgba(255, 240, 180, 0.6);
+}
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(245, 200, 66, 0.55);
+  background: linear-gradient(135deg, #fff2be, var(--gold-glow) 55%, var(--gold-pure));
+}
+.btn-outline-gold {
+  background: transparent;
+  color: var(--gold-light);
+  border: 1.5px solid var(--gold-border);
+}
+.btn-outline-gold:hover {
+  background: var(--gold-subtle);
+  border-color: var(--gold-light);
+  color: var(--light-silk);
+  transform: translateY(-2px);
+}
+.btn-bronze {
+  background: var(--bronze-soft);
+  color: var(--light-pearl);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.btn-bronze:hover {
+  background: var(--bronze-mid);
+  border-color: var(--gold-glow);
+  color: var(--gold-light);
+}
+
+/* 1. HERO SECTION */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 140px;
+  padding-bottom: 90px;
+  background: radial-gradient(ellipse at 50% 25%, #6B3A2C 0%, var(--bronze-base) 50%, var(--bronze-dark) 90%);
+}
+.hero-rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid var(--gold-border);
+  opacity: 0.35;
+  animation: rotateRing 60s linear infinite;
+}
+.hero-ring:nth-child(1) { width: 500px; height: 500px; border-style: dashed; }
+.hero-ring:nth-child(2) { width: 850px; height: 850px; animation-duration: 90s; animation-direction: reverse; }
+.hero-ring:nth-child(3) { width: 1200px; height: 1200px; opacity: 0.16; border-color: var(--gold-glow); }
+@keyframes rotateRing {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--gold-border);
+  border-radius: 40px;
+  padding: 8px 22px;
+  font-size: 0.88rem;
+  color: var(--gold-light);
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 10px #34d399;
+  display: inline-block;
+  animation: pulseDot 2s infinite;
+}
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 7.5vw, 6.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #FFE89E 0%, #D4AF37 30%, #FFF4D0 50%, #C39226 70%, #FFF0BA 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shineGold 6s linear infinite;
+  text-shadow: 0 0 35px rgba(212, 175, 55, 0.35);
+  letter-spacing: -0.01em;
+}
+@keyframes shineGold {
+  to { background-position: 200% center; }
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: var(--text-muted-light);
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+.hero-desc {
+  font-size: 1.14rem;
+  color: var(--text-muted-light);
+  max-width: 700px;
+  margin: 0 auto 36px;
+  line-height: 1.75;
+  font-weight: 300;
+}
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+.hero-feat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--gold-light);
+}
+
+/* Floating Sparks */
+.sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: var(--gold-light);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--gold-glow);
+  pointer-events: none;
+  opacity: 0;
+  animation: floatSparkle linear infinite;
+}
+@keyframes floatSparkle {
+  0% { opacity: 0; transform: translateY(0) scale(0.3); }
+  25% { opacity: 0.9; }
+  80% { opacity: 0.9; }
+  100% { opacity: 0; transform: translateY(-110vh) scale(1.2); }
+}
+
+/* 2. TICKER MARQUEE */
+.marquee-bar {
+  background: var(--bronze-mid);
+  border-top: 1px solid var(--gold-border);
+  border-bottom: 1px solid var(--gold-border);
+  padding: 16px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 40px;
+  animation: marqueeScroll 32s linear infinite;
+  white-space: nowrap;
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--gold-light);
+}
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+.marquee-star {
+  color: var(--gold-pure);
+  font-size: 1rem;
+}
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* 3. STORY SECTION (LIGHT PEARL CARD ON WARM ESPRESSO BACKGROUND) */
+#story {
+  background: var(--bronze-base);
+  position: relative;
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+.story-visual-wrap {
+  position: relative;
+}
+.story-image-card {
+  position: relative;
+  border-radius: 200px 200px 24px 24px;
+  overflow: hidden;
+  border: 2px solid var(--gold-pure);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 40px rgba(212, 175, 55, 0.2);
+  aspect-ratio: 4/5;
+  background: var(--bronze-dark);
+}
+.story-image-card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+.story-image-card:hover img {
+  transform: scale(1.05);
+}
+.story-badge-box {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(38, 22, 17, 0.94);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--gold-pure);
+  border-radius: 40px;
+  padding: 10px 24px;
+  white-space: nowrap;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.story-badge-box b {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold-glow);
+  display: block;
+}
+.story-badge-box span {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--light-silk);
+}
+.story-card-light {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-deep);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  position: relative;
+}
+.story-card-light h3 {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--bronze-dark);
+}
+.story-card-light p {
+  color: var(--text-muted-dark);
+  font-size: 1.04rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+.story-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(99, 71, 62, 0.2);
+}
+.highlight-pill {
+  background: var(--light-blush);
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--terracotta);
+}
+.highlight-pill strong {
+  display: block;
+  font-size: 0.98rem;
+  color: var(--bronze-dark);
+}
+.highlight-pill span {
+  font-size: 0.82rem;
+  color: var(--text-muted-dark);
+}
+
+/* 4. AISLES GALLERY (8 AISLES - REAL PHOTOS) */
+#aisles {
+  background: var(--bronze-dark);
+  position: relative;
+}
+.aisles-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.aisles-header .sec-desc {
+  margin: 0 auto;
+}
+
+/* Category Filter Tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 36px 0 44px;
+}
+.tab-btn {
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--text-muted-light);
+  transition: all 0.3s;
+}
+.tab-btn:hover, .tab-btn.active {
+  background: var(--gold-glow);
+  color: var(--bronze-dark);
+  border-color: var(--gold-glow);
+  box-shadow: 0 4px 18px rgba(245, 200, 66, 0.35);
+  transform: translateY(-2px);
+}
+
+/* 8 Aisles Grid */
+.aisles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.aisle-card {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  cursor: pointer;
+}
+.aisle-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold-pure);
+  box-shadow: 0 24px 50px rgba(0,0,0,0.5), 0 0 30px rgba(212, 175, 55, 0.3);
+}
+.aisle-img-wrap {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: #111;
+}
+.aisle-img-wrap img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+.aisle-card:hover .aisle-img-wrap img {
+  transform: scale(1.08);
+}
+.aisle-tag-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(38, 22, 17, 0.92);
+  backdrop-filter: blur(8px);
+  color: var(--gold-light);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--gold-border);
+}
+.aisle-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(38, 22, 17, 0.75) 100%);
+  opacity: 0.7;
+}
+.zoom-hint {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--bronze-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s;
+}
+.aisle-card:hover .zoom-hint {
+  opacity: 1;
+  transform: scale(1);
+}
+.aisle-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  background: var(--light-pearl);
+}
+.aisle-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--bronze-dark);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.aisle-content p {
+  color: var(--text-muted-dark);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+.aisle-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid rgba(99, 71, 62, 0.15);
+}
+.aisle-footer-tag {
+  font-size: 0.78rem;
+  color: var(--terracotta);
+  font-weight: 600;
+}
+.aisle-btn-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold-deep);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.aisle-btn-link:hover {
+  color: var(--bronze-base);
+}
+
+/* 5. INTERACTIVE GIFT FINDER / OCCASION CONCIERGE (LIGHT ALABASTER CARD) */
+#gift-finder {
+  background: var(--bronze-base);
+  padding: 90px 0;
+}
+.finder-wrapper {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--gold-pure);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+}
+.finder-content {
+  padding: 48px;
+}
+.finder-content h3 {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--bronze-dark);
+  margin-bottom: 12px;
+}
+.finder-content p {
+  color: var(--text-muted-dark);
+  font-size: 0.98rem;
+  margin-bottom: 28px;
+}
+.finder-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.finder-chip {
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: #EFE4DC;
+  border: 1px solid rgba(99, 71, 62, 0.2);
+  color: var(--bronze-dark);
+  transition: all 0.25s;
+}
+.finder-chip.active {
+  background: var(--bronze-dark);
+  color: var(--gold-light);
+  border-color: var(--gold-pure);
+  box-shadow: 0 4px 14px rgba(38, 22, 17, 0.25);
+}
+
+.finder-display-side {
+  background: linear-gradient(135deg, var(--bronze-mid), var(--bronze-dark));
+  color: var(--text-light);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-left: 1px solid var(--gold-border);
+}
+.finder-result-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.finder-result-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+.finder-result-box p {
+  font-size: 0.92rem;
+  color: var(--text-muted-light);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.finder-result-items {
+  list-style: none;
+  font-size: 0.86rem;
+  color: var(--light-silk);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.finder-result-items li::before {
+  content: "✦ ";
+  color: var(--gold-glow);
+}
+
+/* 6. GIFT HAMPER CUSTOMIZER & PRICE ESTIMATOR (MEDIUM DARK & GOLD) */
+#hamper-customizer {
+  background: radial-gradient(ellipse at 50% 30%, #5E3224 0%, var(--bronze-base) 60%, var(--bronze-dark) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hamper-card {
+  background: rgba(38, 22, 17, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1.5px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hamper-text h3 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--light-silk);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.hamper-text p {
+  color: var(--text-muted-light);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+.hamper-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gold-glow);
+  color: var(--bronze-dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-info strong {
+  display: block;
+  font-size: 0.98rem;
+  color: var(--light-silk);
+}
+.step-info span {
+  font-size: 0.84rem;
+  color: var(--text-muted-light);
+}
+
+/* Hamper Planner Form */
+.planner-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 30px;
+}
+.planner-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold-light);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.planner-field {
+  margin-bottom: 20px;
+}
+.planner-field label {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted-light);
+  margin-bottom: 8px;
+}
+.planner-select {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bronze-dark);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  color: var(--light-silk);
+  font-family: inherit;
+  font-size: 0.94rem;
+  outline: none;
+}
+.planner-select:focus {
+  border-color: var(--gold-glow);
+}
+.estimate-badge {
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px dashed var(--gold-pure);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.estimate-badge small {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted-light);
+}
+.estimate-badge b {
+  font-size: 1.25rem;
+  color: var(--gold-light);
+}
+
+/* 7. SHOWCASE GRID (LIGHT CREAM BACKGROUND) */
+#showcase {
+  background: var(--light-cream);
+  color: var(--text-dark);
+}
+.showcase-header {
+  text-align: center;
+  margin-bottom: 54px;
+}
+.showcase-header .sec-desc {
+  margin: 0 auto;
+}
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.showcase-card {
+  background: var(--light-silk);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(38, 22, 17, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.4s ease;
+}
+.showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(38, 22, 17, 0.16);
+  border-color: var(--gold-pure);
+}
+.showcase-img {
+  aspect-ratio: 16/11;
+  overflow: hidden;
+  position: relative;
+}
+.showcase-img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+.showcase-card:hover .showcase-img img {
+  transform: scale(1.08);
+}
+.showcase-content {
+  padding: 26px;
+}
+.showcase-content h4 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bronze-dark);
+  margin-bottom: 8px;
+}
+.showcase-content p {
+  color: var(--text-muted-dark);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+.showcase-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.showcase-tag {
+  background: var(--light-blush);
+  color: var(--terracotta);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* 8. STATS SECTION */
+#stats {
+  background: linear-gradient(135deg, var(--bronze-soft), #7F4231 50%, var(--bronze-mid));
+  border-block: 1px solid var(--gold-border);
+  padding: 70px 0;
+  text-align: center;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.stat-box b {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 8px;
+  text-shadow: 0 0 24px rgba(249, 220, 122, 0.45);
+}
+.stat-box span {
+  font-size: 0.95rem;
+  color: var(--light-cream);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+/* 9. REVIEWS SECTION (LIGHT PEARL CARDS) */
+#reviews {
+  background: var(--bronze-base);
+}
+.reviews-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.reviews-header .sec-desc {
+  margin: 0 auto;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+.review-card {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.35s ease;
+}
+.review-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-pure);
+}
+.review-stars {
+  color: var(--gold-pure);
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+.review-quote {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-style: italic;
+  color: var(--bronze-dark);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+.reviewer-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(99, 71, 62, 0.15);
+}
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-pure);
+}
+.reviewer-info h5 {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--bronze-dark);
+}
+.reviewer-info span {
+  font-size: 0.78rem;
+  color: var(--text-muted-dark);
+  display: block;
+}
+
+/* 10. FAQ ACCORDION */
+#faq {
+  background: var(--bronze-dark);
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq-item.active {
+  border-color: var(--gold-pure);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--light-silk);
+  text-align: left;
+}
+.faq-icon {
+  font-size: 1.2rem;
+  color: var(--gold-glow);
+  transition: transform 0.3s;
+}
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 24px;
+  color: var(--text-muted-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.faq-item.active .faq-answer {
+  max-height: 250px;
+  padding: 0 24px 20px 24px;
+}
+
+/* 11. VISIT & GOOGLE MAPS */
+#visit {
+  background: var(--bronze-base);
+}
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+}
+.visit-info-card {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  border-radius: var(--radius-lg);
+  padding: 44px;
+  box-shadow: var(--shadow-deep);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.visit-info-card h3 {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--bronze-dark);
+  margin-bottom: 20px;
+}
+.store-details-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.store-details-list li {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(99, 71, 62, 0.15);
+}
+.store-details-list li:last-child {
+  border-bottom: none;
+}
+.detail-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--light-blush);
+  color: var(--terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.detail-text strong {
+  display: block;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--terracotta);
+}
+.detail-text span {
+  font-size: 0.98rem;
+  color: var(--bronze-dark);
+  font-weight: 500;
+}
+.map-embed-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--gold-pure);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  height: 440px;
+  position: relative;
+  background: var(--bronze-dark);
+}
+.map-embed-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 12. CONTACT & FOOTER */
+#contact {
+  background: radial-gradient(ellipse at 50% 100%, #68382A 0%, var(--bronze-base) 65%, var(--bronze-dark) 100%);
+  text-align: center;
+  padding: 90px 0 100px;
+}
+.contact-phone-display {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 700;
+  color: var(--gold-light);
+  display: block;
+  margin: 16px 0 32px;
+  text-shadow: 0 0 30px rgba(249, 220, 122, 0.4);
+  transition: all 0.3s;
+}
+.contact-phone-display:hover {
+  color: #fff;
+  transform: scale(1.02);
+}
+.contact-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  background: #1B0E0A;
+  padding: 40px 0;
+  border-top: 1px solid var(--gold-border);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted-light);
+}
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+/* Floating Quick Actions */
+.floating-bar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 85;
+}
+.float-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  font-size: 1.4rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.float-btn:hover {
+  transform: scale(1.12) translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+.float-call {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+.float-wa {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+/* Fullscreen Lightbox Modal */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(22, 11, 8, 0.95);
+  backdrop-filter: blur(16px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.lightbox-modal.active {
+  display: flex;
+}
+.lightbox-content {
+  background: var(--light-pearl);
+  color: var(--text-dark);
+  max-width: 600px;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+  border: 2px solid var(--gold-pure);
+  animation: zoomModal 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes zoomModal {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.lightbox-img-wrap {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  position: relative;
+}
+.lightbox-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.lightbox-body {
+  padding: 28px;
+}
+.lightbox-body h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bronze-dark);
+  margin-bottom: 8px;
+}
+.lightbox-body p {
+  color: var(--text-muted-dark);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.lightbox-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+/* Scroll Entrance Animations */
+.rv {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--delay, 0s);
+}
+.rv.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .aisles-grid { grid-template-columns: repeat(2, 1fr); }
+  .story-grid, .finder-wrapper, .hamper-card, .faq-grid, .visit-grid { grid-template-columns: 1fr; gap: 36px; }
+  .finder-display-side { border-left: none; border-top: 1px solid var(--gold-border); padding: 36px; }
+  .showcase-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .aisles-grid { grid-template-columns: 1fr; }
+  .showcase-grid, .reviews-grid { grid-template-columns: 1fr; }
+  .story-card-light { padding: 30px; }
+  .finder-content { padding: 30px; }
+  .hamper-card { padding: 30px; }
+  .visit-info-card { padding: 30px; }
+  section { padding: 75px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="scroll-bar"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="brand">
+      <div class="brand-icon">🎁</div>
+      <div class="brand-text">
+        <h1>Bhavani Gift &amp; Fancy</h1>
+        <span>Vajarahalli • Bengaluru</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#story">Our Story</a>
+      <a href="#aisles">The 8 Aisles</a>
+      <a href="#gift-finder">Gift Finder</a>
+      <a href="#hamper-customizer">Hamper Creator</a>
+      <a href="#showcase">Highlights</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Shop</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-gold" data-call>Call Store</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 1. HERO SECTION -->
+<section id="hero">
+  <div class="hero-rings">
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge rv">
+      <span class="status-dot"></span>
+      <span>Open Today 9:30 AM – 9:30 PM • Kanakapura Main Road, Vajarahalli</span>
+    </div>
+    <h1 class="hero-title rv" style="--delay: 0.15s;">Bhavani Gift &amp; Fancy Store</h1>
+    <div class="hero-subtitle rv" style="--delay: 0.25s;">Gifts That Warm Hearts &amp; Bangles That Sparkle</div>
+    <p class="hero-desc rv" style="--delay: 0.35s;">
+      Your family's trusted superstore in Senappa Building, Vajarahalli. Explore thousands of wedding glass bangles, luxury gift hampers, plush soft toys, festive pooja specials, and bespoke gift wrapping all under one roof.
+    </p>
+    <div class="hero-cta rv" style="--delay: 0.45s;">
+      <a href="#aisles" class="btn btn-gold">Explore the 8 Aisles</a>
+      <a href="#gift-finder" class="btn btn-outline-gold">Interactive Gift Finder</a>
+      <a href="#hamper-customizer" class="btn btn-bronze">Customize a Gift Hamper</a>
+    </div>
+    <div class="hero-features rv" style="--delay: 0.55s;">
+      <div class="hero-feat-item"><span>✦</span> 10+ Years in Vajarahalli</div>
+      <div class="hero-feat-item"><span>✦</span> 5,000+ Gift &amp; Fancy Items</div>
+      <div class="hero-feat-item"><span>✦</span> Wholesale Bulk Wedding Favours</div>
+      <div class="hero-feat-item"><span>✦</span> Free Gift Packaging Available</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. TICKER MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <div class="marquee-item"><span>Glass &amp; Metal Bangles</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Luxury Gift Hampers</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Imitation Jewellery &amp; Earrings</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Plush Soft Toys &amp; Kids Novelties</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Hair Accessories &amp; Cosmetics</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Pooja Essentials &amp; Brass Diyas</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Wedding Return Gifts in Bulk</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Custom Box &amp; Ribbon Wrapping</span><span class="marquee-star">✦</span></div>
+    <!-- Seamless Loop -->
+    <div class="marquee-item"><span>Glass &amp; Metal Bangles</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Luxury Gift Hampers</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Imitation Jewellery &amp; Earrings</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Plush Soft Toys &amp; Kids Novelties</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Hair Accessories &amp; Cosmetics</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Pooja Essentials &amp; Brass Diyas</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Wedding Return Gifts in Bulk</span><span class="marquee-star">✦</span></div>
+    <div class="marquee-item"><span>Custom Box &amp; Ribbon Wrapping</span><span class="marquee-star">✦</span></div>
+  </div>
+</div>
+
+<!-- 3. STORY SECTION -->
+<section id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-visual-wrap rv">
+        <div class="story-image-card">
+          <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80" alt="Bhavani Gift & Fancy Store Showroom Vajarahalli" loading="lazy">
+          <div class="story-badge-box">
+            <b>A Decade of Smiles</b>
+            <span>Vajarahalli's Favourite Store</span>
+          </div>
+        </div>
+      </div>
+      <div class="story-card-light rv" style="--delay: 0.2s;">
+        <span class="eyebrow eyebrow-terracotta">Our Store Heritage</span>
+        <h3>More Than a Shop — A Destination for Every Family Celebration.</h3>
+        <p>
+          Located in the heart of Senappa Building on Kanakapura Main Road, <strong>Bhavani Gift &amp; Fancy Store</strong> was founded on a heartfelt principle: every celebration deserves a special spark, and every gift should bring an unforgettable smile.
+        </p>
+        <p>
+          Over the years, we have grown from a modest neighborhood counter into a vibrant, multi-aisle superstore serving families from Vajarahalli, Ganigarapalya, Raghuvanahalli, and Talaghattapura. Whether you need wedding glass bangles matched to silk saree borders, birthday return gifts in wholesale quantities, or festive Varamahalakshmi pooja accessories, our shelves are always brimming with fresh choices.
+        </p>
+        <div class="story-highlights">
+          <div class="highlight-pill">
+            <strong>Personalised Assistance</strong>
+            <span>Patient guidance to match colors &amp; choose gifts</span>
+          </div>
+          <div class="highlight-pill">
+            <strong>Honest, Transparent Pricing</strong>
+            <span>Affordable rates with bulk order discounts</span>
+          </div>
+          <div class="highlight-pill">
+            <strong>Prime Location on Main Road</strong>
+            <span>Easily accessible near Vajarahalli Metro</span>
+          </div>
+          <div class="highlight-pill">
+            <strong>Artisan Gift Wrapping</strong>
+            <span>Ready-to-gift packages with bows and tags</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. AISLES GALLERY (8 AISLES - REAL HIGH-RES PHOTOS) -->
+<section id="aisles">
+  <div class="container">
+    <div class="aisles-header rv">
+      <span class="eyebrow eyebrow-gold">Superstore Department Tour</span>
+      <h2 class="sec-title sec-title-light">Explore Our 8 Curated Aisles</h2>
+      <p class="sec-desc sec-desc-light">
+        Step through our spacious showroom. Every aisle is organized with care so you can discover everyday beauty and celebratory treasures effortlessly. Click any card to inspect details and inquire with our team.
+      </p>
+      
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All 8 Aisles</button>
+        <button class="tab-btn" data-filter="jewellery">Bangles &amp; Jewellery</button>
+        <button class="tab-btn" data-filter="gifts">Gifts &amp; Hampers</button>
+        <button class="tab-btn" data-filter="festive">Festive &amp; Bulk</button>
+        <button class="tab-btn" data-filter="wrapping">Wrapping &amp; Craft</button>
+      </div>
+    </div>
+
+    <div class="aisles-grid" id="aisles-grid-container">
+      <!-- Injected via JavaScript with authentic photography -->
+    </div>
+  </div>
+</section>
+
+<!-- 5. INTERACTIVE GIFT FINDER CONCIERGE -->
+<section id="gift-finder">
+  <div class="container">
+    <div class="finder-wrapper rv">
+      <div class="finder-content">
+        <span class="eyebrow eyebrow-terracotta">Occasion Concierge</span>
+        <h3>Find the Perfect Gift in Seconds</h3>
+        <p>
+          Selecting a thoughtful present shouldn't feel overwhelming. Choose the celebration below to see our handpicked recommendations, and instantly verify stock via WhatsApp.
+        </p>
+        
+        <div class="finder-options">
+          <button class="finder-chip active" data-occasion="birthday">🎂 Birthday Celebrations</button>
+          <button class="finder-chip" data-occasion="wedding">💍 Wedding Return Gifts</button>
+          <button class="finder-chip" data-occasion="anniversary">🥂 Anniversaries &amp; Couples</button>
+          <button class="finder-chip" data-occasion="festival">🪔 Varamahalakshmi &amp; Diwali</button>
+          <button class="finder-chip" data-occasion="babyshower">👶 Baby Shower &amp; Naming</button>
+          <button class="finder-chip" data-occasion="housewarming">🏡 Housewarming (Gruhapravesha)</button>
+        </div>
+
+        <a href="#" class="btn btn-gold" id="finder-wa-btn" target="_blank" rel="noopener">
+          <span>✦ Enquire About This Gift Selection on WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="finder-display-side">
+        <div class="finder-result-box">
+          <h4 id="finder-result-title">Birthday Surprise Collections</h4>
+          <p id="finder-result-desc">From giant huggable soft toys and interactive games for kids to luxury grooming accessories and keepsake watch boxes for adults.</p>
+          <ul class="finder-result-items" id="finder-result-list">
+            <li>Plush teddy bears &amp; character novelties</li>
+            <li>Fashion wristwatches &amp; stainless jewellery</li>
+            <li>Custom birthday gift hampers with chocolates</li>
+            <li>Complimentary festive gift-wrapping with ribbons</li>
+          </ul>
+        </div>
+        <small style="color: var(--text-muted-light); font-size: 0.82rem;">
+          💡 We offer on-the-spot personalized packaging and customized greeting tags for all purchases!
+        </small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. GIFT HAMPER CUSTOMIZER & PRICE ESTIMATOR -->
+<section id="hamper-customizer">
+  <div class="container">
+    <div class="hamper-card rv">
+      <div class="hamper-text">
+        <span class="eyebrow eyebrow-gold">Bespoke Gifting</span>
+        <h3>Create Your Custom Gift Hamper</h3>
+        <p>
+          Whether welcoming wedding guests or surprising a loved one on their milestone, custom hampers make an enduring statement. Pick your theme and box tier below for an instant estimate.
+        </p>
+        <div class="hamper-steps">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-info">
+              <strong>Select Hamper Tier &amp; Theme</strong>
+              <span>Choose from handcrafted wicker baskets, hardbound velvet boxes, or rigid kraft organizers</span>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-info">
+              <strong>Curate Interior Fillings</strong>
+              <span>Combine dry fruits, artisanal diyas, fragrances, bangles, and confections</span>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-info">
+              <strong>Handcrafted Ribbon Finish</strong>
+              <span>Sealed with luxury satin ribbons, botanical accents, and gold seal tags</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-gold" id="hamper-wa-btn" target="_blank" rel="noopener">
+          <span>Confirm Hamper Order on WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="planner-box">
+        <h4><span>✦</span> Hamper Customizer &amp; Estimator</h4>
+        <div class="planner-field">
+          <label>Hamper Presentation Box</label>
+          <select class="planner-select" id="hamper-box-select">
+            <option value="Classic Keepsake Gift Box">Classic Keepsake Gift Box with Window Ribbon</option>
+            <option value="Deluxe Woven Cane Basket">Deluxe Woven Cane Basket with Floral Accents</option>
+            <option value="Grand Velvet Royal Chest">Grand Velvet Royal Chest with Brass Clasp</option>
+          </select>
+        </div>
+
+        <div class="planner-field">
+          <label>Hamper Theme &amp; Contents</label>
+          <select class="planner-select" id="hamper-theme-select">
+            <option value="Festive Pooja & Traditional Diya Set">Festive Pooja &amp; Traditional Brass Diya Set</option>
+            <option value="Bridal Shringar & Bangle Hamper">Bridal Shringar &amp; Handcrafted Bangle Hamper</option>
+            <option value="Sweet Celebrations & Chocolates">Sweet Celebrations &amp; Premium Chocolates</option>
+            <option value="Kids Birthday & Toys Surprise Box">Kids Birthday &amp; Toys Surprise Box</option>
+          </select>
+        </div>
+
+        <div class="planner-field">
+          <label>Estimated Quantity</label>
+          <select class="planner-select" id="hamper-qty-select">
+            <option value="Single Gift Piece (1 pc)">Single Gift Piece (1 pc)</option>
+            <option value="Family / Small Gathering (5 - 15 pcs)">Family / Small Gathering (5 – 15 pcs)</option>
+            <option value="Bulk Wedding / Corporate (25+ pcs)">Bulk Wedding / Corporate (25+ pcs with discount)</option>
+          </select>
+        </div>
+
+        <div class="estimate-badge">
+          <small>Estimated Price Range per Hamper</small>
+          <b id="hamper-estimate-price">₹450 – ₹1,200 / hamper</b>
+          <div style="font-size: 0.78rem; color: var(--text-muted-light); margin-top: 4px;">
+            *Wholesale volume discounts applied on orders of 20+ units
+          </div>
+        </div>
+
+        <button class="btn btn-outline-gold" style="width: 100%;" id="update-hamper-btn">
+          Update Hamper Selection
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. SHOWCASE GRID (LIGHT CREAM BACKGROUND) -->
+<section id="showcase">
+  <div class="container">
+    <div class="showcase-header rv">
+      <span class="eyebrow eyebrow-terracotta">Showroom Highlights</span>
+      <h2 class="sec-title sec-title-dark">Treasures on Every Shelf</h2>
+      <p class="sec-desc sec-desc-dark">
+        A glimpse into the diverse collections that make Bhavani Gift &amp; Fancy Store Kanakapura Road's one-stop lifestyle emporium.
+      </p>
+    </div>
+
+    <div class="showcase-grid">
+      <div class="showcase-card rv">
+        <div class="showcase-img">
+          <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=800&q=80" alt="Luxury Wrapped Gifts" loading="lazy">
+        </div>
+        <div class="showcase-content">
+          <h4>Artisan Gift Presentation</h4>
+          <p>Handcrafted rigid gift boxes, textured imported wrapping paper, and custom satin bow styling for unforgettable presentations.</p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Custom Boxes</span>
+            <span class="showcase-tag">Satin Ribbons</span>
+            <span class="showcase-tag">On-the-Spot Wrap</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card rv" style="--delay: 0.15s;">
+        <div class="showcase-img">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="Festive Lighting and Decor" loading="lazy">
+        </div>
+        <div class="showcase-content">
+          <h4>Festive Lights &amp; Pooja Décor</h4>
+          <p>Exquisite brass akhand diyas, fairy light festoons, torans, and traditional return gift envelopes for Varamahalakshmi &amp; Diwali.</p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Varamahalakshmi</span>
+            <span class="showcase-tag">Deepavali</span>
+            <span class="showcase-tag">Pooja Thalis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card rv" style="--delay: 0.3s;">
+        <div class="showcase-img">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80" alt="Traditional Bangle Collections" loading="lazy">
+        </div>
+        <div class="showcase-content">
+          <h4>Glass &amp; Matte Metal Bangles</h4>
+          <p>Over two hundred vibrant shades of Firozabad glass bangles, velvet matte kadas, and silk thread bridal sets in sizes 2.2 to 2.10.</p>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Glass Chooriyan</span>
+            <span class="showcase-tag">Bridal Chooda</span>
+            <span class="showcase-tag">All Sizes 2.2-2.10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. STATS SECTION -->
+<section id="stats">
+  <div class="container stats-grid">
+    <div class="stat-box rv">
+      <b data-target="10" data-format="plus">0</b>
+      <span>Years in Vajarahalli</span>
+    </div>
+    <div class="stat-box rv" style="--delay: 0.1s;">
+      <b data-target="8" data-format="plain">0</b>
+      <span>Spacious Aisles</span>
+    </div>
+    <div class="stat-box rv" style="--delay: 0.2s;">
+      <b data-target="5000" data-format="kplus">0</b>
+      <span>Gift &amp; Fancy Items</span>
+    </div>
+    <div class="stat-box rv" style="--delay: 0.3s;">
+      <b data-target="100" data-format="percent">0</b>
+      <span>Celebration Ready</span>
+    </div>
+  </div>
+</section>
+
+<!-- 9. REVIEWS SECTION (LIGHT PEARL CARDS) -->
+<section id="reviews">
+  <div class="container">
+    <div class="reviews-header rv">
+      <span class="eyebrow eyebrow-gold">Customer Love</span>
+      <h2 class="sec-title sec-title-light">Praised by Families Along Kanakapura Road</h2>
+      <p class="sec-desc sec-desc-light">
+        Hear why our patrons from Vajarahalli, Ganigarapalya, and Talaghattapura make Bhavani Gift &amp; Fancy Store their first choice for every occasion.
+      </p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card rv">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <div class="review-quote">
+            "Bhavani Store is a lifesaver on Kanakapura Main Road! I ordered 60 return gift hampers for our housewarming ceremony. The packaging was immaculate, and every guest complimented the presentation. Very friendly shop owners."
+          </div>
+        </div>
+        <div class="reviewer-profile">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=150&q=80" alt="Deepa Mallesh" class="reviewer-avatar" loading="lazy">
+          <div class="reviewer-info">
+            <h5>Deepa Mallesh</h5>
+            <span>Vajarahalli • Return Gift Customer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card rv" style="--delay: 0.15s;">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <div class="review-quote">
+            "My wife found the exact glass bangles to match her festival silk saree after searching three other shops. They have an immense variety of hair accessories and imitation jhumkas at honest, fair prices."
+          </div>
+        </div>
+        <div class="reviewer-profile">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" alt="Harish Kumar" class="reviewer-avatar" loading="lazy">
+          <div class="reviewer-info">
+            <h5>Harish Kumar</h5>
+            <span>Ganigarapalya Main Rd • Regular Shopper</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card rv" style="--delay: 0.3s;">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <div class="review-quote">
+            "Huge selection of birthday gifts and soft toys for kids. They wrapped my niece's birthday present with ribbons and personalized tag without extra fuss. A wonderful, cheerful neighborhood shop!"
+          </div>
+        </div>
+        <div class="reviewer-profile">
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80" alt="Rashmi Gowda" class="reviewer-avatar" loading="lazy">
+          <div class="reviewer-info">
+            <h5>Rashmi Gowda</h5>
+            <span>Raghuvanahalli • Birthday Gifts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FAQ ACCORDION -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="rv">
+        <span class="eyebrow eyebrow-gold">Customer Questions</span>
+        <h2 class="sec-title sec-title-light">Frequently Asked Questions</h2>
+        <p class="sec-desc sec-desc-light" style="margin-bottom: 26px;">
+          Everything you need to know about bulk discounts, custom hamper orders, and showroom timings at Bhavani Gift &amp; Fancy Store.
+        </p>
+        <div style="background: rgba(212, 175, 55, 0.1); border: 1px solid var(--gold-border); border-radius: var(--radius-md); padding: 24px;">
+          <h4 style="font-family: var(--font-serif); font-size: 1.3rem; color: var(--gold-light); margin-bottom: 8px;">✦ Bulk Order Tip</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted-light); line-height: 1.6;">
+            Planning return gifts for a wedding or housewarming? Call or WhatsApp us 3 to 5 days in advance so we can prepare uniform packaging and offer wholesale tier pricing!
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-accordion rv" style="--delay: 0.2s;">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Do you accept bulk orders for wedding return gifts?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes! We regularly fulfill bulk orders ranging from 25 to 500+ return gifts for weddings, Gruhapravesha, and Navratri Golu. Options include decorated potli bags, dry fruit boxes, brass diyas, and bangle sets with customized packing.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer custom gift wrapping services?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes, every gift purchased in our store can be packaged with your choice of premium wrapping paper, satin ribbon rosettes, and occasion tags on the spot. We also wrap gifts purchased outside for a nominal fee.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I bring my saree or lehenga to match bangles?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Definitely! Customers often bring their blouse piece, saree pallu, or photo on their phone. Our staff will patiently color-match your outfit with glass bangles, velvet metal kadas, and stone latkans.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Where is the shop situated on Kanakapura Main Road?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            We are situated in Senappa Building at the Ganigarapalya Main Road junction in Vajarahalli, conveniently accessible within a short distance from the Vajarahalli Metro Station on the Green Line.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. STORE VISIT & LOCATION -->
+<section id="visit">
+  <div class="container">
+    <div class="visit-grid">
+      <div class="visit-info-card rv">
+        <span class="eyebrow eyebrow-terracotta">Find Us Easily</span>
+        <h3>Visit Our Vajarahalli Superstore</h3>
+        <ul class="store-details-list">
+          <li>
+            <div class="detail-icon">📍</div>
+            <div class="detail-text">
+              <strong>Store Address</strong>
+              <span>Senappa Building, Kanakapura Main Road, Ganigarapalya Main Road, Vajarahalli, Bengaluru, Karnataka 560062</span>
+            </div>
+          </li>
+          <li>
+            <div class="detail-icon">🚇</div>
+            <div class="detail-text">
+              <strong>Nearby Landmark</strong>
+              <span>Close to Vajarahalli Metro Station &amp; Raghuvanahalli Cross</span>
+            </div>
+          </li>
+          <li>
+            <div class="detail-icon">⏰</div>
+            <div class="detail-text">
+              <strong>Operating Hours</strong>
+              <span>Monday – Saturday: 9:30 AM – 9:30 PM<br>Sunday: 10:00 AM – 8:30 PM</span>
+            </div>
+          </li>
+          <li>
+            <div class="detail-icon">🛍️</div>
+            <div class="detail-text">
+              <strong>Services Available</strong>
+              <span>In-Store Shopping • Custom Hamper Assembly • Bulk Orders • Gift Wrapping</span>
+            </div>
+          </li>
+        </ul>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="#" class="btn btn-gold" data-dir target="_blank" rel="noopener">Get GPS Directions</a>
+          <a href="#" class="btn btn-bronze" data-call>Call Store Desk</a>
+        </div>
+      </div>
+
+      <div class="map-embed-wrapper rv" style="--delay: 0.2s;">
+        <iframe 
+          title="Bhavani Gift and Fancy Store Location"
+          src="https://maps.google.com/maps?q=Senappa+Building+Kanakapura+Main+Road+Ganigarapalya+Vajarahalli+Bengaluru+560062&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. CONTACT SECTION -->
+<section id="contact">
+  <div class="container rv">
+    <span class="eyebrow eyebrow-gold">Direct Communication</span>
+    <h2 class="sec-title sec-title-light">Inquire About Stock or Custom Hampers</h2>
+    <p class="sec-desc sec-desc-light" style="margin: 0 auto;">
+      Give us a quick call or send a WhatsApp message with photos of the items you need. Our friendly team is always eager to assist.
+    </p>
+    <a href="#" class="contact-phone-display" data-call id="main-phone-text">+91 98452 71830</a>
+    <div class="contact-actions">
+      <a href="#" class="btn btn-gold" data-call>Call Now: +91 98452 71830</a>
+      <a href="#" class="btn btn-outline-gold" data-wa target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a href="#" class="btn btn-bronze" data-dir target="_blank" rel="noopener">Open in Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">Bhavani Gift &amp; Fancy Store</div>
+    <p>Senappa Building, Kanakapura Main Road, Ganigarapalya Main Road, Vajarahalli, Bengaluru, Karnataka 560062</p>
+    <p style="margin-top: 10px; font-size: 0.8rem; color: rgba(235, 217, 206, 0.6);">
+      © 2014 – 2026 Bhavani Gift &amp; Fancy Store. All rights reserved. Trusted by over 8,000+ South Bengaluru families.
+    </p>
+  </div>
+</footer>
+
+<!-- FLOATING QUICK ACTIONS -->
+<div class="floating-bar">
+  <a href="#" class="float-btn float-call" data-call title="Call Store Direct">📞</a>
+  <a href="#" class="float-btn float-wa" data-wa target="_blank" rel="noopener" title="Chat on WhatsApp">💬</a>
+</div>
+
+<!-- FULLSCREEN LIGHTBOX MODAL -->
+<div class="lightbox-modal" id="lightbox-modal">
+  <div class="lightbox-content">
+    <div class="lightbox-img-wrap">
+      <img id="modal-img" src="" alt="Aisle Zoom View">
+    </div>
+    <div class="lightbox-body">
+      <span class="eyebrow eyebrow-terracotta" id="modal-tag">Aisle Details</span>
+      <h3 id="modal-title">Aisle Name</h3>
+      <p id="modal-desc">Description of aisle gift and fancy items.</p>
+      <div class="lightbox-actions">
+        <button class="btn btn-bronze" id="modal-close-btn">Close</button>
+        <a href="#" class="btn btn-gold" id="modal-wa-btn" target="_blank" rel="noopener">Enquire via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ========================================================
+   STORE DATA & CONFIGURATION
+   ======================================================== */
+const STORE_CONFIG = {
+  phoneDisplay: "+91 98452 71830",
+  phoneDigits: "919845271830",
+  mapDestination: "Bhavani Gift and Fancy Store, Senappa Building, Kanakapura Main Road, Ganigarapalya Main Road, Vajarahalli, Bengaluru 560062"
+};
+
+/* 8 Dedicated Aisles with 100% Real, Unique Photography */
+const AISLES_DATA = [
+  {
+    id: 1,
+    title: "Traditional & Fancy Glass Bangles",
+    category: "jewellery",
+    tag: "Aisle 01 • Bestseller",
+    categoryLabel: "Bangles & Jewellery",
+    photo: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    desc: "Over 200 festive and wedding colors in genuine glass chooriyan, velvet matte bangles, and bridal kadas. Custom colour-matched to your saree or lehenga.",
+    highlight: "Sizes 2.2 to 2.10 Available"
+  },
+  {
+    id: 2,
+    title: "Fashion Jewellery & Earring Sets",
+    category: "jewellery",
+    tag: "Aisle 02 • Daily & Occasion",
+    categoryLabel: "Bangles & Jewellery",
+    photo: "https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&w=800&q=80",
+    desc: "Sparkling American Diamond studs, South Indian Kemp jhumkas, lightweight daily earrings, and trendy party chokers designed to elevate your everyday charm.",
+    highlight: "Anti-Tarnish Finishes"
+  },
+  {
+    id: 3,
+    title: "Luxury Gift Hampers & Boxes",
+    category: "gifts",
+    tag: "Aisle 03 • Celebration Favours",
+    categoryLabel: "Gifts & Hampers",
+    photo: "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=800&q=80",
+    desc: "Handcrafted gift boxes, dry fruit treasure chests, and customized hampers adorned with rich ribbons and decorative trims for milestone occasions.",
+    highlight: "Custom Hamper Assembly"
+  },
+  {
+    id: 4,
+    title: "Soft Toys & Kids' Novelties",
+    category: "gifts",
+    tag: "Aisle 04 • Kids' World",
+    categoryLabel: "Gifts & Hampers",
+    photo: "https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=800&q=80",
+    desc: "Lovable plush teddy bears, animal plushies, educational toys, and novelty stationery that light up children's birthdays and festive celebrations.",
+    highlight: "Hypoallergenic Plush"
+  },
+  {
+    id: 5,
+    title: "Hair Accessories & Shringar",
+    category: "jewellery",
+    tag: "Aisle 05 • Hair & Beauty",
+    categoryLabel: "Bangles & Jewellery",
+    photo: "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=800&q=80",
+    desc: "Stone-studded hair clips, banana clutches, bridal veni flowers, designer bindis, and beauty accessories tailored for classical dances and wedding styles.",
+    highlight: "500+ Clip Designs"
+  },
+  {
+    id: 6,
+    title: "Festive Pooja Specials & Diyas",
+    category: "festive",
+    tag: "Aisle 06 • Auspicious Décor",
+    categoryLabel: "Festive & Bulk",
+    photo: "https://images.unsplash.com/photo-1608755728617-aefab37d2edd?auto=format&fit=crop&w=800&q=80",
+    desc: "Brass akhand lamps, decorative clay diyas, torans, kumkum holders, and ritual accessories for Varamahalakshmi, Ganesha Chaturthi, and Diwali.",
+    highlight: "Pooja & Golu Essentials"
+  },
+  {
+    id: 7,
+    title: "Wedding Return Gifts in Bulk",
+    category: "festive",
+    tag: "Aisle 07 • Bulk Favours",
+    categoryLabel: "Festive & Bulk",
+    photo: "https://images.unsplash.com/photo-1549049950-48d5887197a0?auto=format&fit=crop&w=800&q=80",
+    desc: "Wholesale packs of potli bags, decorative gift platters, dry fruit containers, and brass return gifts tailored for weddings and Gruhapravesha ceremonies.",
+    highlight: "Wholesale Tier Pricing"
+  },
+  {
+    id: 8,
+    title: "Custom Gift Wrapping & Ribbons",
+    category: "wrapping",
+    tag: "Aisle 08 • Artisan Finish",
+    categoryLabel: "Wrapping & Craft",
+    photo: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80",
+    desc: "Rich textured handmade papers, metallic gold foil wraps, satin ribbons, gift tags, and festive greeting envelopes styled on the spot for your presents.",
+    highlight: "On-the-Spot Gift Wrapping"
+  }
+];
+
+/* Gift Finder Recommendations Database */
+const OCCASION_DATA = {
+  birthday: {
+    title: "Birthday Surprise Collections",
+    desc: "From giant huggable soft toys and interactive games for kids to luxury grooming accessories and keepsake watch boxes for adults.",
+    items: [
+      "Plush teddy bears & character novelties",
+      "Fashion wristwatches & stainless jewellery",
+      "Custom birthday gift hampers with chocolates",
+      "Complimentary festive gift-wrapping with ribbons"
+    ]
+  },
+  wedding: {
+    title: "Wedding Return Gifts & Favours",
+    desc: "Thoughtful, high-quality mementos for wedding guests that express your gratitude while respecting your family's budget.",
+    items: [
+      "Embroidered silk potli bags with dry fruit compartments",
+      "Brass akhand diyas & auspicious thali sets",
+      "Designer bangles in matched guest sets",
+      "Wholesale packaging with thank-you tags"
+    ]
+  },
+  anniversary: {
+    title: "Anniversary & Couple Hampers",
+    desc: "Elegant dual-gift pairings, matching couple accessories, and fragrance hampers designed to commemorate romantic milestones.",
+    items: [
+      "Velvet-lined jewellery & watch storage boxes",
+      "Fragrance mists & scented candle collections",
+      "Gold-plated necklace & earring celebration sets",
+      "Luxury ribbon-tied presentation chests"
+    ]
+  },
+  festival: {
+    title: "Varamahalakshmi, Diwali & Navratri",
+    desc: "Traditional ritual décor, vibrant glass chooriyan, and auspicious return gifts to welcome prosperity into every home.",
+    items: [
+      "Varamahalakshmi saree drape pins & kadas",
+      "Handcrafted terracotta & brass diyas",
+      "Navratri Golu return gift assortment packs",
+      "Festive torans, door hangings & pooja platters"
+    ]
+  },
+  babyshower: {
+    title: "Baby Shower & Seemantham Favours",
+    desc: "Delicate glass bangles for the mother-to-be and soft, baby-safe plush toys and keepsake albums for the newborn.",
+    items: [
+      "Traditional green & red glass bangle packs",
+      "Organic cotton plushies & rattles",
+      "Silver-finish keepsake trinket boxes",
+      "Sweet hamper boxes for family guests"
+    ]
+  },
+  housewarming: {
+    title: "Gruhapravesha (Housewarming) Gifts",
+    desc: "Timeless brass home accents, decorative wall hangings, and premium dry fruit gift platters for new homeowners.",
+    items: [
+      "Heavy brass deepams & hanging bells",
+      "Auspicious Ganesha & Lakshmi decor artifacts",
+      "Hardbound dry fruit gift boxes with locks",
+      "Elegant door torans and artificial floral garlands"
+    ]
+  }
+};
+
+/* ========================================================
+   DOM INITIALIZATION
+   ======================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Populate Phone, WhatsApp and Maps Links
+  document.querySelectorAll('[data-call]').forEach(el => {
+    el.href = `tel:+${STORE_CONFIG.phoneDigits}`;
+  });
+  
+  document.querySelectorAll('[data-wa]').forEach(el => {
+    const defaultMsg = encodeURIComponent("Hello Bhavani Gift & Fancy Store! I am inquiring about products and gift hampers at your Vajarahalli store.");
+    el.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${defaultMsg}`;
+  });
+
+  document.querySelectorAll('[data-dir]').forEach(el => {
+    el.href = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(STORE_CONFIG.mapDestination)}`;
+  });
+
+  // 2. Render 8 Aisles Grid
+  renderAisles('all');
+
+  // 3. Category Filter Tabs
+  const filterBtns = document.querySelectorAll('.tab-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderAisles(btn.dataset.filter);
+    });
+  });
+
+  // 4. Interactive Gift Finder
+  initGiftFinder();
+
+  // 5. Hamper Customizer WhatsApp Generator
+  initHamperCustomizer();
+
+  // 6. Accordion Functionality
+  initAccordion();
+
+  // 7. Scroll Bar & Sticky Nav
+  initScrollEffects();
+
+  // 8. Stats Counter on Scroll
+  initStatsCounter();
+
+  // 9. Floating Golden Dust in Hero
+  initGoldenSparks();
+});
+
+/* Render Aisles Function */
+function renderAisles(filter) {
+  const container = document.getElementById('aisles-grid-container');
+  const filtered = filter === 'all' ? AISLES_DATA : AISLES_DATA.filter(a => a.category === filter);
+  
+  container.innerHTML = filtered.map((aisle, idx) => `
+    <div class="aisle-card rv in" data-id="${aisle.id}" style="--delay: ${(idx % 4) * 0.1}s;">
+      <div class="aisle-img-wrap">
+        <img src="${aisle.photo}" alt="${aisle.title}" loading="lazy">
+        <span class="aisle-tag-badge">${aisle.tag}</span>
+        <div class="aisle-overlay"></div>
+        <div class="zoom-hint">🔍</div>
+      </div>
+      <div class="aisle-content">
+        <div>
+          <h3>${aisle.title}</h3>
+          <p>${aisle.desc}</p>
+        </div>
+        <div class="aisle-card-footer">
+          <span class="aisle-footer-tag">${aisle.highlight}</span>
+          <span class="aisle-btn-link">View Details →</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  // Attach Lightbox Modal click listeners
+  container.querySelectorAll('.aisle-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const aisleId = parseInt(card.dataset.id, 10);
+      const data = AISLES_DATA.find(a => a.id === aisleId);
+      if (data) openLightbox(data);
+    });
+  });
+}
+
+/* Lightbox Functions */
+const modal = document.getElementById('lightbox-modal');
+const modalImg = document.getElementById('modal-img');
+const modalTag = document.getElementById('modal-tag');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalWaBtn = document.getElementById('modal-wa-btn');
+const modalCloseBtn = document.getElementById('modal-close-btn');
+
+function openLightbox(item) {
+  modalImg.src = item.photo;
+  modalTag.textContent = item.tag;
+  modalTitle.textContent = item.title;
+  modalDesc.textContent = item.desc;
+  
+  const waMsg = encodeURIComponent(`Hi Bhavani Gift & Fancy Store! I would like to inquire about "${item.title}" (${item.highlight}) from your Vajarahalli store.`);
+  modalWaBtn.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${waMsg}`;
+  
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+modalCloseBtn.addEventListener('click', closeLightbox);
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.classList.contains('active')) closeLightbox();
+});
+
+/* Interactive Gift Finder Implementation */
+function initGiftFinder() {
+  const chips = document.querySelectorAll('.finder-chip');
+  const resultTitle = document.getElementById('finder-result-title');
+  const resultDesc = document.getElementById('finder-result-desc');
+  const resultList = document.getElementById('finder-result-list');
+  const waBtn = document.getElementById('finder-wa-btn');
+
+  function updateOccasion(key) {
+    const data = OCCASION_DATA[key];
+    if (!data) return;
+
+    resultTitle.textContent = data.title;
+    resultDesc.textContent = data.desc;
+    resultList.innerHTML = data.items.map(item => `<li>${item}</li>`).join('');
+
+    chips.forEach(c => c.classList.toggle('active', c.dataset.occasion === key));
+
+    const msg = encodeURIComponent(`Hello Bhavani Gift Store! I am looking for gift options for "${data.title}". Can you share available options and price ranges at your Vajarahalli shop?`);
+    waBtn.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${msg}`;
+  }
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      updateOccasion(chip.dataset.occasion);
+    });
+  });
+
+  updateOccasion('birthday');
+}
+
+/* Hamper Customizer Implementation */
+function initHamperCustomizer() {
+  const boxSelect = document.getElementById('hamper-box-select');
+  const themeSelect = document.getElementById('hamper-theme-select');
+  const qtySelect = document.getElementById('hamper-qty-select');
+  const priceDisplay = document.getElementById('hamper-estimate-price');
+  const waBtn = document.getElementById('hamper-wa-btn');
+  const updateBtn = document.getElementById('update-hamper-btn');
+
+  function calculateEstimate() {
+    const box = boxSelect.value;
+    const theme = themeSelect.value;
+    const qty = qtySelect.value;
+
+    let price = "₹450 – ₹1,200 / hamper";
+    if (box.includes('Royal Chest') || theme.includes('Bridal Shringar')) {
+      price = "₹1,200 – ₹2,800 / hamper";
+    } else if (box.includes('Deluxe Woven')) {
+      price = "₹750 – ₹1,650 / hamper";
+    }
+
+    if (qty.includes('25+ pcs')) {
+      price += " (Wholesale Discount Applicable)";
+    }
+
+    priceDisplay.textContent = price;
+
+    const msg = encodeURIComponent(`Hi Bhavani Gift & Fancy Store! I would like to order/inquire about a custom gift hamper:
+- Box Style: ${box}
+- Hamper Theme: ${theme}
+- Estimated Quantity: ${qty}
+- Estimated Price: ${price}
+Please let me know how to proceed at your Vajarahalli showroom!`);
+
+    waBtn.href = `https://wa.me/${STORE_CONFIG.phoneDigits}?text=${msg}`;
+  }
+
+  boxSelect.addEventListener('change', calculateEstimate);
+  themeSelect.addEventListener('change', calculateEstimate);
+  qtySelect.addEventListener('change', calculateEstimate);
+
+  updateBtn.addEventListener('click', () => {
+    calculateEstimate();
+    waBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    waBtn.style.transform = 'scale(1.08)';
+    setTimeout(() => { waBtn.style.transform = 'scale(1)'; }, 350);
+  });
+
+  calculateEstimate();
+}
+
+/* Accordion Component */
+function initAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    btn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      faqItems.forEach(f => f.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+}
+
+/* Scroll Effects: Progress Bar, Navbar & Scroll Reveals */
+function initScrollEffects() {
+  const bar = document.getElementById('scroll-bar');
+  const nav = document.getElementById('navbar');
+  const revealElements = document.querySelectorAll('.rv');
+
+  window.addEventListener('scroll', () => {
+    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    bar.style.width = scrolled + '%';
+
+    if (winScroll > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }, { passive: true });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealElements.forEach(el => observer.observe(el));
+}
+
+/* Numeric Stats Counter Animation */
+function initStatsCounter() {
+  const statsSection = document.getElementById('stats');
+  let animated = false;
+
+  const countUp = (el) => {
+    const target = parseInt(el.dataset.target, 10);
+    const format = el.dataset.format;
+    const duration = 2000;
+    const start = performance.now();
+
+    const frame = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const easeProgress = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(target * easeProgress);
+
+      if (format === 'plain') {
+        el.textContent = current;
+      } else if (format === 'plus') {
+        el.textContent = current + '+';
+      } else if (format === 'kplus') {
+        el.textContent = (current >= 1000 ? Math.floor(current / 1000) + 'K+' : current + '+');
+      } else if (format === 'percent') {
+        el.textContent = current + '%';
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(frame);
+      }
+    };
+    requestAnimationFrame(frame);
+  };
+
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        statsSection.querySelectorAll('[data-target]').forEach(countUp);
+        statObserver.unobserve(statsSection);
+      }
+    });
+  }, { threshold: 0.25 });
+
+  statObserver.observe(statsSection);
+}
+
+/* Floating Golden Sparks */
+function initGoldenSparks() {
+  const hero = document.getElementById('hero');
+  const count = 28;
+  for (let i = 0; i < count; i++) {
+    const spark = document.createElement('div');
+    spark.className = 'sparkle';
+    spark.style.left = `${Math.random() * 100}%`;
+    spark.style.bottom = `${Math.random() * 10}px`;
+    spark.style.animationDuration = `${6 + Math.random() * 10}s`;
+    spark.style.animationDelay = `${Math.random() * 8}s`;
+    const size = 3 + Math.random() * 4;
+    spark.style.width = `${size}px`;
+    spark.style.height = `${size}px`;
+    hero.appendChild(spark);
+  }
+}
+</script>
+</body>
+</html>
